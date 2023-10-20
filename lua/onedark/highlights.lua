@@ -111,7 +111,7 @@ hl.syntax = {
     Include = colors.Purple,
     Keyword = {fg = c.purple, fmt = cfg.code_style.keywords},
     Define = colors.Purple,
-    Typedef = colors.Purple,
+    Typedef = colors.Yellow,
     Exception = colors.Purple,
     Conditional = {fg = c.purple, fmt = cfg.code_style.keywords},
     Repeat = {fg = c.purple, fmt = cfg.code_style.keywords},
@@ -552,6 +552,11 @@ hl.plugins.indent_blankline = {
     IndentBlanklineContextChar = { fg = c.grey, fmt = "nocombine" },
     IndentBlanklineContextStart = { sp = c.grey, fmt = "underline" },
     IndentBlanklineContextSpaceChar = { fmt = "nocombine" },
+
+    -- Ibl v3
+    IblIndent = { fg = c.bg1, fmt = "nocombine" },
+    IblWhitespace = { fmt = "nocombine" },
+    IblScope = { fmt = "nocombine" },
 }
 
 hl.plugins.mini = {
